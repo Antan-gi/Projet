@@ -13,7 +13,7 @@ jobs:
       with:
         server: ftp.alwaysdata.com
         username: arcadialezoo
-        password: ${{ Medium64H5N1 }}
+        password: ${{ secrets.ftp_password }}
         exclude: |
           **/.git*
           **/.git*/**
