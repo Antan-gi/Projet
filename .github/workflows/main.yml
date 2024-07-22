@@ -11,8 +11,8 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: votre-hote-ftp
-        username: votre-username-ftp
+        server: FTP host: ftp-arcadialezoo.alwaysdata.net
+        username: arcadialezoo
         password: ${{ secrets.ftp_password }}
         exclude: |
           **/.git*
