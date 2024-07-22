@@ -1,0 +1,682 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("/assets/Img/v1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #815b09;
+    text-align: left;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+#title {
+    font-size: 36px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    background-color: #815b09;
+    color: #fff;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu-logo {
+    background-color: #815b09;
+    margin: 0px;
+}
+
+.menu-logo img {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #815b09;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    box-shadow: 0 8px 16px #1ca700;
+}
+
+.navbar-nav .nav-item {
+    margin: 0;
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #575757;
+}
+
+/* Afficher le menu lors du survol */
+.menu-container:hover .navbar-nav {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 41%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 12%;
+    background-color: #cdac67;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #815b09;
+}
+
+.sidebar-content {
+    text-align: center;
+}
+
+
+
+/*Page 2 les services*/
+
+
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.div-service-2, .div-service-3, .div-service-4 {
+    margin: 40px auto;
+    width: 25%;
+    background-color: #815b09;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid #cdac67;
+}
+
+.div-service-1 {
+    position: fixed;
+    top:100px;
+    left: 24%;
+    margin: 40px auto;
+    width: 50%;
+    font-size: 40px;
+    background-color: #815b09;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #cdac67;
+}
+}
+
+.div-service-2, .div-service-3, .div-service-4 {
+    width: 30%;
+    font-size: 20px;
+}
+
+.restauration, .train, .visite{
+    color:#fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+
+
+
+/* Media queries pour petits écrans */
+
+
+
+
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar-brand {
+        font-size: 2em;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .sidebar, .content-box, .content-box2 {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        padding: 10px;
+    }
+
+    .liste-images li img {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+
+    /* Page 2 les services*/
+
+
+
+
+
+    .div-service-1, .div-service-2, .div-service-3, .div-service-4 {
+        width: 90%;
+    }
+
+    .div-service-1 {
+        font-size: 30px;
+    }
+
+    .div-service-2, .div-service-3, .div-service-4 {
+        font-size: 16px;
+    }
+}
+
+/* page 3 Les themes*/
+
+.contenant {
+    margin-top: 100px;
+    width: 10%;
+    height: 10%;
+    background: none;
+}
+
+.rectangles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20px; 
+}
+
+.rectangle {
+    display: flex;
+    align-items: center;
+    width: 1300px;
+    height: 1200%; 
+    margin-bottom: 20px; 
+    background-color: #cdac67; 
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #815b09;
+   
+}
+
+.text {
+    order:1;
+   text-align: left;
+   margin-right: 250px;
+   margin-left: 250px;
+   color:#fff;
+   font-size: 40px;
+}
+
+.image-button {
+    order:2;
+    border: none;
+    background: none;
+    padding: ;
+    cursor: pointer;
+    overflow: hidden;
+    height: 100%;
+    width: 800px;
+}
+
+.image-button img {
+    width: 600px; 
+    height: 200px ;
+    object-fit: cover;
+    border-radius: 8px; 
+    transition: transform 0.3s ease;
+    border: 2px solid #815b09;
+}
+
+.image-button:hover img {
+    transform: scale(1.1); /* Zoom au survol */
+}
+
+/* page4 les especes*/
+
+.grand-rectangle {
+    background-color: #b7c033;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    height: 76%;
+    margin-left: 70px;
+    border: 2px solid #815b09;
+}
+
+.ligne {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.petit-rectangle {
+    width: 400px; 
+    height: 200px;
+    background-color: #815b09;
+    border-radius: 8px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    border: 2px solid #575757;
+    overflow: hidden;
+
+}
+
+.petit-rectangle img {
+    border-radius: 8px;
+    object-fit: contain;
+    border: 2px solid #575757;
+    object-fit: cover;
+    width: 250px;
+    height:180px;
+    
+    
+}
+
+.bas-rectangle {
+    width: 1500px;
+    height: 260px;
+    background-color: #ceae63;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 185px;
+    border: 2px solid #815b09;
+    position: fixed;
+    bottom:120px;
+}
+.bt1 {
+    border: none;
+    background: none;
+    cursor: pointer;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+   
+    
+
+}
+
+
+ /* Page 4 Les races*/
+ 
+
+ .encadre {
+    width: 90%;
+    height:82%;
+    background-color: #d5e217;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    position:absolute;
+    right: 10px;
+    border: 2px solid #815b09;
+    
+    
+
+ }
+
+ .encadre1 {
+    Width: 400px;
+    height:385px;
+    background-color: #cdac67;
+    position:absolute;
+    bottom: 15px;
+    left: 15px;
+    border-radius: 15px;
+    border: 2px solid #815b09;
+ }
+
+ .encadre2 {
+    Width: 1280px;
+    height:470px;
+    background-color: #cdac67;
+    position:absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 15px;
+    border: 2px solid #815b09;
+ }
+
+ .encadre3 {
+    Width: 1280px;
+    height:300px;
+    background-color: #cdac67;
+    position:absolute;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 15px;
+    border: 2px solid #815b09;
+
+ }
+
+ .encadre img {
+    width: 400px;
+    height: 385px;
+    border-radius: 15px;
+    position:absolute;
+    left: 15px;
+ }
+
+ .p3 {
+    text-align: center;
+    font-size: 24px;
+    color:#fff
+ }
+
+ .p4 {                /*pour les boutons ds index*/
+    color: #fff;
+    text-decoration: none;
+ }
+
+ .txta1 {
+    background-color: #fff;
+    position:fixed;
+    bottom: 100px;
+    width: 20%;
+    height:15%;
+ }
+
+
+ /* restauration*/
+
+ .menu {
+   width:80%;
+   height:80%;
+   background-color: #b7c033;
+   border-radius: 15px;
+   border: 2px solid #815b09;
+
+ }
+
+ .Menu {
+    text-align: center;
+    font-size: 24px;
+    color:#fff
+ }
+
+ 
+
+ /* page contact*/
+
+
+
+ .span {
+        display: flex;
+        flex-direction: column;
+        gap: 40px; /* Ajoute un espace de 20px entre les encadrés */
+        align-items: left; /* Centre les encadrés horizontalement */
+        margin-left: 15px;
+        margin-top: 15px;
+        
+    }
+
+    .cont1 {
+        width: 350px; 
+        height: 15px;
+        padding: 20px;
+        border: 1px solid #000;
+        background-color: rgba(255, 255, 255, 0.7); /* Fond blanc semi-transparent */
+        color: #000; /* Couleur du texte */
+        font-size: 16px;
+        position: relative; /* Nécessaire pour le positionnement absolu de l'indication */
+        border: 2px solid #815b09;
+        border-radius: 15px;
+    }
+
+    .cont {
+        width: 900px; 
+        height: 250px;
+        padding: 20px;
+        border: 1px solid #000;
+        background-color: rgba(255, 255, 255, 0.7); /* Fond blanc semi-transparent */
+        color: #000; /* Couleur du texte */
+        font-size: 16px;
+        position: relative; /* Nécessaire pour le positionnement absolu de l'indication */
+        border: 2px solid #815b09;
+        border-radius: 15px;
+    }
+
+    .cont4 {
+        width: 500px; 
+        height: 15px;
+        padding: 20px;
+        border: 1px solid #000;
+        background-color: rgba(255, 255, 255, 0.7); /* Fond blanc semi-transparent */
+        color: #000; /* Couleur du texte */
+        font-size: 16px;
+        position: relative; /* Nécessaire pour le positionnement absolu de l'indication */
+        border: 2px solid #815b09;
+        border-radius: 15px;
+    }
+
+    .indication {
+        position: absolute;
+        top: 10px; /* Ajustez la position selon vos besoins */
+        left: 10px; /* Ajustez la position selon vos besoins */
+        color: rgba(0, 0, 0, 0.5); /* Texte semi-transparent */
+        font-size: 14px;
+        pointer-events: none; /* Pour que le texte d'indication ne gêne pas les clics sur l'élément */
+    }
+
+    textarea {
+        width: 100%;
+        height: 100%;
+        border: none; /* Supprime la bordure du textarea */
+        background: none; /* Supprime le fond du textarea */
+        outline: none; /* Supprime la bordure lors du focus */
+        resize: none; /* Empêche le redimensionnement */
+        font-size: 16px; /* Assure que le texte à l'intérieur du textarea a la même taille que celui de l'encadré */
+    }
+
+
+    .cont3 {
+        background-color: #b7c033;
+        width: 90%;
+        height: 80%;
+        border: 2px solid #815b09;
+        border-radius: 15px;
+        
+        
+    }
+
+.cont-bt0 {
+    position:fixed;
+    bottom: 130px;
+    font-size: 24px;
+    position: fixed;
+    left: 900px;
+    border: 2px solid #815b09;
+    background-color: #815b09;
+    color: #fff;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.input1 {
+    background: none;
+    border:none;
+}
+
+.input2 {
+    background: none;
+    border:none;
+}
+
+
+
+
+
+/* page login*/
+
+
+
+
+.span1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    align-items: left; 
+    margin-left: 15px;
+    margin-top: 15px;
+    
+}
+
+.cont6, .cont7, .cont8 {
+    width: 350px; 
+    height: 15px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.7); 
+    color: #000; 
+    font-size: 16px;
+    position: relative; 
+    border: 2px solid #815b09;
+    border-radius: 15px;
+    
+}
+
+.indication {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    color: rgba(0, 0, 0, 0.5); 
+    font-size: 14px;
+    pointer-events: none; 
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    border: none; 
+    background: none; 
+    outline: none; 
+    resize: none; 
+    font-size: 16px; 
+}
+
+.login-btn-cxn {
+    position:fixed;
+    bottom: 130px;
+    font-size: 24px;
+    position: fixed;
+    left: 900px;
+    border: 2px solid #815b09;
+    background-color: #815b09;
+    color: #fff;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.login-btn-cc {
+    margin-top: 20px;
+    position:fixed;
+    top:32%;
+    font-size: 16px;
+    left: 16.5%;
+    background-color: #815b09;
+    color: #fff;
+    border-radius: 15px;
+    height:35px;
+    border: 1px solid black;
+}
+
+.login-btn-mdp {
+    width: 150px; 
+    height: 35px;
+    border: 1px solid #000;
+    background-color: #815b09; 
+    color: #fff; 
+    font-size: 16px;
+    position: fixed; 
+    top:40%;
+    left: 16%;
+    border-radius: 15px;
+  
+    
+}
+
+.cont5 {
+    position:fixed;
+    top:100px;
+    right: 15px;
+    background-color: #b7c033;
+    width: 90%;
+    height: 80%;
+    border: 2px solid #815b09;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
