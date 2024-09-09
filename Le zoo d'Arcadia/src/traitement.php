@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'db.php'; // Inclure le fichier de connexion à la base de données
+require 'db.php'; 
 
 $response = array();
 
@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $password = $_POST['motDePasse'];
 
-    // Vérifier les informations de connexion
+ 
     $stmt = $pdo->prepare('SELECT * FROM users WHERE email = ?');
     $stmt->execute([$email]);
     $user = $stmt->fetch();
