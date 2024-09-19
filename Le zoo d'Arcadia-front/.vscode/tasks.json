@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Lancer le serveur PHP",
+        "type": "shell",
+        "command": "php",
+        "args": [
+          "-S",
+          "127.0.0.1:4000",
+          "-t",
+          "." // Remplace 'public' par le répertoire racine de ton projet
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [],
+        "detail": "Lancer automatiquement le serveur PHP sur le port 4000"
+      }
+    ]
+  }
+  

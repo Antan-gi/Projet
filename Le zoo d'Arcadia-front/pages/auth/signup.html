@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="entete text-center text-white">
+      <div>
+          <h1>Bienvenue sur le site d'Arcadia</h1>
+          <p></p>
+      </div>
+  </div>
+  <form id="formulaireInscription">
+      <div class="mb-3">
+          <label for="emailInput" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="emailInput" placeholder="Votre email" name="email">
+          <div class="valid-feedback">
+              <i class="bi bi-check-circle"></i> Validé !
+          </div>
+          <div class="invalid-feedback">
+              Veuillez entrer un email valide.
+          </div>
+      </div>
+      <div class="mb-3">
+          <label for="nomInput" class="form-label">Nom:</label>
+          <input type="text" class="form-control" id="nomInput" placeholder="Votre nom" name="name">
+          <div class="valid-feedback">
+              <i class="bi bi-check-circle"></i> Validé !
+          </div>
+          <div class="invalid-feedback">
+              Veuillez entrer votre nom.
+          </div>
+      </div>
+      <div class="mb-3">
+          <label for="prenomInput" class="form-label">Prénom:</label>
+          <input type="text" class="form-control" id="prenomInput" placeholder="Votre prénom" name="prenom">
+          <div class="valid-feedback">
+              <i class="bi bi-check-circle"></i> Validé !
+          </div>
+          <div class="invalid-feedback">
+              Veuillez entrer votre prénom.
+          </div>
+      </div>
+      <div class="mb-3">
+          <label for="pass1Input" class="form-label">Mot de passe:</label>
+          <input type="password" class="form-control" id="pass1Input" placeholder="Votre mot de passe" name="password">
+          <div class="invalid-feedback">
+              Le mot de passe n'est pas assez robuste : Au moins 8 caractères, comprenant au moins 1 majuscule, 1 minuscule et un chiffre.
+          </div>
+      </div>
+      <div class="mb-3">
+          <label for="passConfirmInput" class="form-label">Confirmer le mot de passe:</label>
+          <input type="password" class="form-control" id="passConfirmInput" placeholder="Confirmer votre mot de passe">
+          <div class="invalid-feedback">
+              Vos mots de passe ne sont pas identiques.
+          </div>
+      </div>
+      <div>
+          <button type="button" class="btn btn-primary" id="btn-inscription">Envoyer</button>
+      </div>
+  </form>
+</div>
