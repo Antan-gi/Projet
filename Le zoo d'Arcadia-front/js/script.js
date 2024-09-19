@@ -58,6 +58,7 @@ function isConnected(){
 };
 
 
+
 /*
 disconnected
 connected (admin/visiteur)
