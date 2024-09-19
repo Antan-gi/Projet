@@ -49,7 +49,7 @@ function eraseCookie(name) {
 }
 
 function isConnected(){
-    if(getToken() == null || getToken == undefined){
+    if(getToken() == null || getToken() == undefined){
         return false;
     }
     else{
@@ -96,29 +96,32 @@ function showAndHideElementsForRoles(){
     })
 }
 
-function getInfoUser(){
-let myHeaders = new Headers();
-myHeaders.append("X-AUTH-TOKEN", getToken())
-
-let requestOptions = {
-    method: "GET",
-    headers: myHeaders,
-    redirect: "follow"
-};
-
-fetch(apiUrl+"account/me", requestOptions)
-.then(response => {
-    if(response.ok){
-        return response.json();
-    }
-    else{
-        console.log("impossible de récupérer les infos");
-    }
-    })
-    .then(result => {
+function getInfoUser() {
+    let myHeaders = new Headers();
+    myHeaders.append("X-AUTH-TOKEN", getToken());
+  
+    let requestOptions = {
+      method: "GET",
+      headers: myHeaders,
+      redirect: "follow"
+    };
+  
+    return fetch(apiUrl + "account/me", requestOptions)
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          console.log("Impossible de récupérer les infos, statut:", response.status);
+          throw new Error("Erreur lors de la récupération des informations.");
+        }
+      })
+      .then(result => {
+        // Faites quelque chose avec result ici
+        console.log("Infos utilisateur récupérées:", result);
         return result;
-    })
-    .catch(error => {
-        console.log("error lors de la recupération des infos");
-    });
-}
+      })
+      .catch(error => {
+        console.error("Erreur lors de la récupération des infos:", error);
+      });
+  }
+  
