@@ -22,3 +22,4 @@ jobs:
           **/node_modules/bootstrap/scss/**
           **/node_modules/bootstrap/js/**
           **/node_modules/bootstrap-icons/icons/**
+          **/Le zoo d'arcadia-back/**
