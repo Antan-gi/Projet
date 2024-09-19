@@ -1,4 +1,4 @@
-const tokenCookieName = "accesToken";
+const tokenCookieName = "accesstoken";
 const RoleCookieName = "role";
 const signoutBtn = document.getElementById('signout-btn');
 const apiUrl = "http://127.0.0.1:8000/api/";
@@ -98,7 +98,7 @@ function showAndHideElementsForRoles(){
 
 function getInfoUser(){
 let myHeaders = new Headers();
-myHeaders.append("", getToken())
+myHeaders.append("X-AUTH-TOKEN", getToken())
 
 let requestOptions = {
     method: "GET",
