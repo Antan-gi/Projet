@@ -13,7 +13,7 @@ jobs:
       with:
         server: ftp-arcadialezoo.alwaysdata.net
         username: arcadialezoo
-        password: ${{ secrets.ftp_password }}
+        password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /www/
         protocol: ftps
         exclude: |
